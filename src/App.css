@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.status {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.status.connected {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.disconnected {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9;
+  color: #646cff;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+/* Changed from :hover to :active for better UX */
+button:active {
+  border-color: #4a54d6;
+  background-color: #646cff;
+  color: white;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px auto #646cff;
+  outline-offset: 2px;
+}
