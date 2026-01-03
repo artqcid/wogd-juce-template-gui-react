@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="container">
       <h1>WOGD JUCE Plugin - React GUI</h1>
-      <div className={status +${isConnected ? 'connected' : 'disconnected'}}>
+      <div className={`status ${isConnected ? 'connected' : 'disconnected'}`}>
         Status: {isConnected ? 'Connected to Plugin' : 'Running in Dev Mode'}
       </div>
       <button onClick={handleTestConnection}>
